@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store Location</title>
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .store-header {
+      background: url('images/Faqs.webp') center/cover no-repeat;
+      text-align: center;
+      color: #fff;
+      padding: 80px 20px 60px;
+      position: relative;
+    }
+
+    .store-header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .store-header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 32px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .store-header p {
+      position: relative;
+      z-index: 2;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .store-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 5%;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .store-section:nth-child(even) {
+      flex-direction: row-reverse;
+      background-color: #fafafa;
+    }
+
+    .store-img {
+      flex: 1 1 45%;
+    }
+
+    .store-img img {
+      width: 100%;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+
+    .store-info {
+      flex: 1 1 45%;
+    }
+
+    .store-info h2 {
+      font-size: 35px;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .info-item i {
+      font-size: 16px;
+      margin-right: 10px;
+      color: #111;
+    }
+
+    @media (max-width: 768px) {
+      .store-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .info-item {
+        justify-content: center;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <section class="store-header">
+    <p>HOME - STORE LOCATION</p>
+    <h1>Store location</h1>
+  </section>
+
+  <!-- Store 1 -->
+  <section class="store-section">
+    <div class="store-img">
+      <img src="images/Store 1.webp" alt="Valsone Shop">
+    </div>
+    <div class="store-info">
+      <h2>Valsone shop</h2>
+      <div class="info-item"><i class="fas fa-phone"></i> <span>+999 3222 000 388</span></div>
+      <div class="info-item"><i class="fas fa-envelope"></i> <span>store@domain.com</span></div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span>27 Eden walk eden centre, Broadway, United States</span></div>
+      <div class="info-item"><i class="far fa-clock"></i> <span>Mon - Fri : 9:00am - 6:00pm</span></div>
+    </div>
+  </section>
+
+  <!-- Store 2 -->
+  <section class="store-section">
+    <div class="store-img">
+      <img src="images/Store 2.webp" alt="Melbourne Place">
+    </div>
+    <div class="store-info">
+      <h2>Melbourne place</h2>
+      <div class="info-item"><i class="fas fa-phone"></i> <span>+999 3222 000 388</span></div>
+      <div class="info-item"><i class="fas fa-envelope"></i> <span>store@domain.com</span></div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span>27 Eden walk eden centre, Broadway, United States</span></div>
+      <div class="info-item"><i class="far fa-clock"></i> <span>Mon - Fri : 9:00am - 6:00pm</span></div>
+    </div>
+  </section>
+
+  <!-- Store 3 -->
+  <section class="store-section">
+    <div class="store-img">
+      <img src="images/Store 3.webp" alt="Ansoldt Park">
+    </div>
+    <div class="store-info">
+      <h2>Ansoldt park</h2>
+      <div class="info-item"><i class="fas fa-phone"></i> <span>+999 3222 000 388</span></div>
+      <div class="info-item"><i class="fas fa-envelope"></i> <span>store@domain.com</span></div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span>27 Eden walk eden centre, Broadway, United States</span></div>
+      <div class="info-item"><i class="far fa-clock"></i> <span>Mon - Fri : 9:00am - 6:00pm</span></div>
+    </div>
+  </section>
+<!-- footer section  -->
+ <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2 class="logo"><span>J</span>ELWO</h2>
+      <p><i class="fa-solid fa-location-dot"></i> 55 East 10th street, New York, NY 10003</p>
+      <p><i class="fa-solid fa-phone"></i> + (220) 123 456 7890</p>
+      <p><i class="fa-solid fa-envelope"></i> demo123546@gmail.com</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Faq’s</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Privacy & terms</h3>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Refund policy</a></li>
+          <li><a href="#">Shipping & return</a></li>
+          <li><a href="#">Terms & condition</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Category</h3>
+        <ul>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Earrings</a></li>
+          <li><a href="#">Pendant</a></li>
+          <li><a href="#">Necklaces</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit store</h3>
+        <p>Mon - Sat : 10am - 11pm</p>
+        <p>Sun : 10am - 4pm</p>
+        <p>7 Days a week</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="subscribe-social">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="subscribe-text">
+        Subscribe and get 15% discount.
+      </div>
+
+      <div class="subscribe-box">
+        <input type="email" placeholder="Enter your email">
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+
+    <p class="copyright">Copyright © 2025 by spacingtech</p>
+  </div>
+</footer>
+</body>
+</html>

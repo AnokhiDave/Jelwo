@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JELWO Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header>
+  <div class="top-bar">
+    <div class="logo"><span>J</span>ELWO</div>
+    <div class="delivery">Free UK standard delivery on all orders.</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search product..." />
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+    <div class="top-icons">
+      <a href="login.html"><i class="fa-regular fa-user" style="color: black; "></i></a>
+      <a href="wishlist.html"><i class="fa-regular fa-heart" style="color: black;"></i> </a>(0)
+      <!-- CART BUTTON -->
+    <div class="cart-icon" onclick="openCart()">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </div>
+    <span>(0)</span>
+
+  </div>
+</div>
+
+
+<!-- 🛒 SHOPPING CART SIDEBAR -->
+<div id="cartSidebar" class="cart-sidebar">
+
+  <div class="cart-header">
+    <p>My shopping cart</p>
+    <span class="close" onclick="closeCart()">✖</span>
+  </div>
+
+  <div class="cart-empty-section">
+    <div class="cart-empty-icon">🛍️</div>
+    <p>Your cart is empty</p>
+
+    <button class="continue-btn" onclick="closeCart()">CONTINUE SHOPPING</button>
+  </div>
+
+  <div class="recommend-title">You might also like</div>
+
+  <div class="recommend-box">
+      <img src="images/Product1.webp" alt="Ring">
+      <div class="rec-info">
+        <p class="rec-name">Glitter diamond ring</p>
+        <p class="rec-price">Rs. 10.00</p>
+      </div>
+  </div>
+
+</div>
+
+<!-- BACKGROUND OVERLAY -->
+<div id="overlay" class="overlay" onclick="closeCart()"></div>
+
+
+    </div>
+  </div>
+
+  <div class="nav-bar">
+    <div class="nav-left">
+      <i class="fa-solid fa-headset"></i>
+      <span>(220) 123 456 7890</span>
+    </div>
+
+    <div class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="#">HOME</a>
+
+      <!-- 🛍 SHOP Mega Dropdown -->
+      <div class="dropdown mega">
+        <button class="drop-btn">SHOP <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h4>Earrings</h4>
+            <a href="#">Blue heavy t-shirt</a>
+            <a href="#">Brown sunglasses</a>
+            <a href="#">Bucket shoes</a>
+            <a href="#">Iamond rashmi ring</a>
+            <a href="#">Floral gold bangle</a>
+            <a href="#">Glitter diamond ring</a>
+          </div>
+
+          <div class="mega-column">
+            <h4>Necklace</h4>
+            <a href="#">Rose gold rings</a>
+            <a href="#">Brown sunglasses</a>
+            <a href="#">Bucket shoes</a>
+            <a href="#">Color print sandal</a>
+            <a href="#">Floral gold bangle</a>
+            <a href="#">Simple Pearl earrings</a>
+          </div>
+
+          <div class="mega-column">
+            <h4>Rings</h4>
+            <a href="#">Blue heavy t-shirt</a>
+            <a href="#">Brown sunglasses</a>
+            <a href="#">Dark sunglasses</a>
+            <a href="#">Half sleev tshirt</a>
+            <a href="#">Formal shirt</a>
+            <a href="#">Gold nose pin</a>
+          </div>
+
+          <div class="mega-column">
+            <h4>Bracelets</h4>
+            <a href="#">Blue heavy t-shirt</a>
+            <a href="#">Brown sunglasses</a>
+            <a href="#">Formal shoes</a>
+            <a href="#">Formal shirt</a>
+            <a href="#">Blue heavy t-shirt</a>
+            <a href="#">Brown sunglasses</a>
+          </div>
+
+          <div class="mega-column image-col">
+            <img src="images/header/jewelry-4-menu-banner.webp" alt="Flat 30% OFF">
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown mega">
+  <button class="drop-btn">PRODUCTS <i class="fa-solid fa-angle-down"></i></button>
+
+  <div class="mega-menu products-mega">
+    <!-- Column 1 -->
+    <div class="mega-column">
+      <h4>Earrings</h4>
+      <a href="#">Blue heavy t-shirt</a>
+      <a href="#">Brown sunglasses</a>
+      <a href="#">Bucket shoes</a>
+      <a href="#">Iamond rashmi ring</a>
+      <a href="#">Floral gold bangle</a>
+      <a href="#">Glitter diamond ring</a>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="mega-column">
+      <h4>Bracelets</h4>
+      <a href="#">Blue heavy t-shirt</a>
+      <a href="#">Brown sunglasses</a>
+      <a href="#">Formal shoes</a>
+      <a href="#">Formal shirt</a>
+      <a href="#">Blue heavy t-shirt</a>
+      <a href="#">Brown sunglasses</a>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="mega-column">
+      <h4>Necklace</h4>
+      <a href="#">Rose gold rings</a>
+      <a href="#">Brown sunglasses</a>
+      <a href="#">Bucket shoes</a>
+      <a href="#">Color print sandal</a>
+      <a href="#">Floral gold bangle</a>
+      <a href="#">Simple Pearl earrings</a>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="mega-column">
+      <h4>Rings</h4>
+      <a href="#">Blue heavy t-shirt</a>
+      <a href="#">Brown sunglasses</a>
+      <a href="#">Dark sunglasses</a>
+      <a href="#">Half sleev tshirt</a>
+      <a href="#">Formal shirt</a>
+      <a href="#">Gold nose pin</a>
+    </div>
+
+    <!-- Column 5: Popular Collection -->
+    <div class="mega-column popular-col">
+      <h4>Popular collection</h4>
+      <div class="popular-slider">
+        <div class="popular-item">
+          <img src="images/header/Popular 1.webp" alt="Gold Ring">
+          <p>From Rs. 12.00</p>
+        </div>
+        <div class="popular-item">
+          <img src="images/header/Popular 2.webp" alt="Gold Ring 2">
+          <p>Rs. 12.00</p>
+        </div>
+      </div>
+
+      <!-- <div class="slider-nav">
+        <button class="nav-prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="nav-next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+      <a href="#">BLOG</a>
+ <!-- PAGES dropdown -->
+<div class="dropdown pages">
+  <button class="drop-btn" aria-expanded="false" aria-controls="pages-menu">
+    PAGES <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+  </button>
+
+  <div id="pages-menu" class="dropdown-menu" role="menu" aria-hidden="true">
+    <a href="aboutus.html" role="menuitem">About us <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#" role="menuitem">Contact <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="faq.html" role="menuitem">FAQ's</a>
+    <a href="privacy.html" role="menuitem">Privacy policy</a>
+    <a href="refund.html" role="menuitem">Refund policy</a>
+    <a href="store.html" role="menuitem">Store location</a>
+    <a href="shipping.html" role="menuitem">Shipping & return</a>
+    <a href="terms.html" role="menuitem">Terms & condition</a>
+  </div>
+</div>
+
+
+    </nav>
+
+    <div class="nav-right">
+      <i class="fa-solid fa-house"></i> FREE TRY AT HOME
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+   <div class="hero-circle">
+    <img src="images/Hero main.webp" alt="Circle Icon">
+  </div>
+  <div class="hero-slider">
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <img src="images/Hero 1.webp" alt="Gold Ring">
+      <div class="slide-content">
+        <h2>Jewelry is our passion</h2>
+        
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img src="images/Hero 2.webp" alt="Diamond Ring">
+      <div class="slide-content">
+        <h2>Jewelry made with love</h2>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img src="images/Hero 3.webp" alt="Elegant Ring">
+      <div class="slide-content">
+        <h2>Elegance is our obsession</h2>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <button class="nav prev"><i class="fa-solid fa-arrow-left"></i></button>
+  <button class="nav next"><i class="fa-solid fa-arrow-right"></i></button>
+</section>
+
+<!-- === PROMO INFO STRIP === -->
+<section class="promo-info">
+  <p>
+    DIAMONDS FOR EVERY EXCUSE 1500+ DESIGNS UNDER 
+    <span>$200</span>
+  </p>
+</section>
+
+<!-- promo -->
+ <section class="promo-banners">
+  <div class="promo-banner">
+    <img src="images/Promo 1.webp" alt="Exquisite Collection">
+    <div class="promo-content1">
+      <p class="offer">GET A 30% DISCOUNT</p>
+      <h3>Exquisite<br>collection</h3>
+      <a href="#" class="btn">SHOP NOW</a>
+    </div>
+  </div>
+
+  <div class="promo-banner">
+    <img src="images/Promo 2.webp" alt="Diamond Necklace">
+    <div class="promo-content">
+      <p class="offer">20% OFF ON WASTAGE</p>
+      <h3>Diamond<br>necklace</h3>
+      <a href="#" class="btn">SHOP NOW</a>
+    </div>
+  </div>
+</section>
+
+<!-- === POPULAR CATEGORY SECTION === -->
+<section class="popular-category">
+  <h2 class="section-title">Popular category</h2>
+  <div class="category-grid">
+    <!-- Category 1 -->
+    <div class="category-item">
+      <img src="images/Popular 2.webp" alt="Bracelets">
+      <div class="category-content">
+        <p>12 + ITEMS</p>
+        <h3>Bracelets</h3>
+        <a href="#" class="btn-line">SHOP NOW</a>
+      </div>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="category-item">
+      <img src="images/Popular 1.webp" alt="Necklace">
+      <div class="category-content">
+        <p>12 + ITEMS</p>
+        <h3>Necklace</h3>
+        <a href="#" class="btn-line">SHOP NOW</a>
+      </div>
+    </div>
+
+    <!-- Category 3 -->
+    <div class="category-item">
+      <img src="images/Popular 3.webp" alt="Pendants">
+      <div class="category-content">
+        <p>10 + ITEMS</p>
+        <h3>Earings</h3>
+        <a href="#" class="btn-line">SHOP NOW</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section">
+  <div class="services-box">
+    <div class="service-item">
+      <i class="fas fa-truck"></i>
+      <div class="service-text">
+        <h4>Free shipping</h4>
+        <p>Free shipping all order</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="service-item">
+      <i class="fas fa-headset"></i>
+      <div class="service-text">
+        <h4>Quality support</h4>
+        <p>Contact us anytime</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="service-item">
+      <i class="fas fa-undo-alt"></i>
+      <div class="service-text">
+        <h4>Money return</h4>
+        <p>30 days for free return</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="service-item">
+      <i class="fas fa-credit-card"></i>
+      <div class="service-text">
+        <h4>Secured payment</h4>
+        <p>Payment cards accepted</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- new jewelry section  -->
+<section class="new-jewelry">
+  <h2>New Jewelrys</h2>
+  <div class="jewelry-grid">
+    <div class="jewelry-card">
+      <span class="discount">25%</span>
+      <img src="images/New Jelwo 1.webp" alt="Simple Pearl Earrings">
+      <div class="countdown">
+        <div><strong>1759</strong><br><span>DAY</span></div>
+        <div><strong>08</strong><br><span>HRS</span></div>
+        <div><strong>40</strong><br><span>MIN</span></div>
+        <div><strong>38</strong><br><span>SEC</span></div>
+      </div>
+      <p class="category">JEWELRY</p>
+      <h3>Simple Pearl Earrings</h3>
+      <p class="price">Rs. 15.00 <span>Rs. 20.00</span></p>
+    </div>
+
+    <div class="jewelry-card">
+      <span class="discount">45%</span>
+      <img src="images/New Jelwo 2.webp" alt="Chic Diamond Ring">
+      <div class="countdown">
+        <div><strong>1759</strong><br><span>DAY</span></div>
+        <div><strong>08</strong><br><span>HRS</span></div>
+        <div><strong>40</strong><br><span>MIN</span></div>
+        <div><strong>38</strong><br><span>SEC</span></div>
+      </div>
+      <p class="category">JEWELRY</p>
+      <h3>Chic Diamond Ring</h3>
+      <p class="price">From Rs. 22.00 <span>Rs. 40.00</span></p>
+    </div>
+
+    <div class="jewelry-card">
+      <span class="discount">64%</span>
+      <img src="images/New Jelwo 3.webp" alt="Gemstone Jhumkas">
+      <div class="countdown">
+        <div><strong>1759</strong><br><span>DAY</span></div>
+        <div><strong>08</strong><br><span>HRS</span></div>
+        <div><strong>40</strong><br><span>MIN</span></div>
+        <div><strong>38</strong><br><span>SEC</span></div>
+      </div>
+      <p class="category">JEWELRY</p>
+      <h3>Gemstone Jhumkas</h3>
+      <p class="price">Rs. 18.00 <span>Rs. 50.00</span></p>
+    </div>
+
+    <div class="jewelry-card">
+      <span class="discount">68%</span>
+      <img src="images/New Jelwo 4.webp" alt="Drop Gold Earrings">
+      <div class="countdown">
+        <div><strong>1759</strong><br><span>DAY</span></div>
+        <div><strong>08</strong><br><span>HRS</span></div>
+        <div><strong>40</strong><br><span>MIN</span></div>
+        <div><strong>38</strong><br><span>SEC</span></div>
+      </div>
+      <p class="category">JEWELRY</p>
+      <h3>Drop Gold Earrings</h3>
+      <p class="price">From Rs. 14.00 <span>Rs. 44.00</span></p>
+    </div>
+  </div>
+
+  <button class="view-btn">VIEW COLLECTION</button>
+</section>
+
+<section class="shine-section">
+  <div class="shine-left">
+    <div class="shine-content">
+      <h2>Unleash your inner shine</h2>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      <button class="shine-btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <div class="shine-right">
+    <div class="shine-video">
+      <img src="images/Shine collection 2.webp" alt="Necklace Video">
+      <div class="play-btn">
+        <span>&#9658;</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- trending section -->
+<section class="new-jewelry">
+  <h2>Trending products</h2>
+  <div class="jewelry-grid">
+    <div class="jewelry-card">
+      <span class="discount">25%</span>
+      <img src="images/New Jelwo 1.webp" alt="Simple Pearl Earrings">
+      <div class="countdown">
+        <div><strong>1759</strong><br><span>DAY</span></div>
+        <div><strong>08</strong><br><span>HRS</span></div>
+        <div><strong>40</strong><br><span>MIN</span></div>
+        <div><strong>38</strong><br><span>SEC</span></div>
+      </div>
+      <p class="category">JEWELRY</p>
+      <h3>Simple Pearl Earrings</h3>
+      <p class="price">Rs. 15.00 <span>Rs. 20.00</span></p>
+    </div>
+
+    <div class="jewelry-card">
+      <span class="discount">45%</span>
+      <img src="images/New Jelwo 2.webp" alt="Chic Diamond Ring">
+      <div class="countdown">
+        <div><strong>1759</strong><br><span>DAY</span></div>
+        <div><strong>08</strong><br><span>HRS</span></div>
+        <div><strong>40</strong><br><span>MIN</span></div>
+        <div><strong>38</strong><br><span>SEC</span></div>
+      </div>
+      <p class="category">JEWELRY</p>
+      <h3>Chic Diamond Ring</h3>
+      <p class="price">From Rs. 22.00 <span>Rs. 40.00</span></p>
+    </div>
+
+    <div class="jewelry-card">
+      <span class="discount">64%</span>
+      <img src="images/New Jelwo 3.webp" alt="Gemstone Jhumkas">
+      <div class="countdown">
+        <div><strong>1759</strong><br><span>DAY</span></div>
+        <div><strong>08</strong><br><span>HRS</span></div>
+        <div><strong>40</strong><br><span>MIN</span></div>
+        <div><strong>38</strong><br><span>SEC</span></div>
+      </div>
+      <p class="category">JEWELRY</p>
+      <h3>Gemstone Jhumkas</h3>
+      <p class="price">Rs. 18.00 <span>Rs. 50.00</span></p>
+    </div>
+
+    <div class="jewelry-card">
+      <span class="discount">68%</span>
+      <img src="images/New Jelwo 4.webp" alt="Drop Gold Earrings">
+      <div class="countdown">
+        <div><strong>1759</strong><br><span>DAY</span></div>
+        <div><strong>08</strong><br><span>HRS</span></div>
+        <div><strong>40</strong><br><span>MIN</span></div>
+        <div><strong>38</strong><br><span>SEC</span></div>
+      </div>
+      <p class="category">JEWELRY</p>
+      <h3>Drop Gold Earrings</h3>
+      <p class="price">From Rs. 14.00 <span>Rs. 44.00</span></p>
+    </div>
+  </div>
+
+  <button class="view-btn">VIEW COLLECTION</button>
+</section>
+
+<!-- testimonials section  -->
+ <section class="testimonials">
+  <h2>Happy customer</h2>
+  <div class="testimonial-container">
+    
+    <div class="testimonial">
+      <div class="rating">
+        ⭐⭐⭐⭐⭐ <span>( 4.0 Reviews )</span>
+      </div>
+      <p class="message">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.
+      </p>
+      <hr />
+      <div class="profile">
+        <img src="images/Testimonial 1.avif" alt="Kristen brown">
+        <div class="info">
+          <h4>Kristen brown</h4>
+          <p>Company ceo</p>
+        </div>
+        <span class="quote">“</span>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="rating">
+        ⭐⭐⭐⭐⭐ <span>( 4.0 Reviews )</span>
+      </div>
+      <p class="message">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.
+      </p>
+      <hr />
+      <div class="profile">
+        <img src="images/Testimonial 2.webp" alt="Michael smith">
+        <div class="info">
+          <h4>Michael smith</h4>
+          <p>Customer</p>
+        </div>
+        <span class="quote">“</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- jewelry news -->
+ <section class="jewelry-news">
+  <h2>Jewelry news</h2>
+  <div class="news-container">
+
+    <div class="news-card">
+      <img src="images/News 1.webp" alt="Ring">
+      <div class="news-content">
+        <p class="meta">02, MAR 2025 | <span>By Andrew johns</span></p>
+        <p class="desc">
+          As part of our mission create space for women to express their sensuality without shame fear or the patriarchal gaze ...
+        </p>
+        <button class="read-more">READ MORE</button>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="images/News 2.webp" alt="Earrings">
+      <div class="news-content">
+        <p class="meta">02, MAR 2025 | <span>By Andrew johns</span></p>
+        <p class="desc">
+          As part of our mission create space for women to express their sensuality without shame fear or the patriarchal gaze ...
+        </p>
+        <button class="read-more">READ MORE</button>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="images/News 3.webp" alt="Necklace">
+      <div class="news-content">
+        <p class="meta">02, MAR 2025 | <span>By Andrew johns</span></p>
+        <p class="desc">
+          As part of our mission create space for women to express their sensuality without shame fear or the patriarchal gaze ...
+        </p>
+        <button class="read-more">READ MORE</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="shop-reels">
+  <h2>Watch & shop reels</h2>
+  <div class="reel-container">
+
+    <div class="reel-card">
+      <video src="images/video/Reel 1.mp4" muted loop></video>
+      <div class="reel-info">
+        <img src="images/News 1.webp" alt="ring thumb">
+        <div>
+          <h4>Chic diamond ring</h4>
+          <p>Rs. 22.00</p>
+        </div>
+      </div>
+      <button class="add-cart">ADD TO CART</button>
+    </div>
+
+    <div class="reel-card">
+      <video src="images/video/reel 2.mp4" muted loop></video>
+      <div class="reel-info">
+        <img src="images/News 3.webp" alt="jhumka thumb">
+        <div>
+          <h4>Flower jhumka</h4>
+          <p>Rs. 18.00</p>
+        </div>
+      </div>
+      <button class="add-cart">ADD TO CART</button>
+    </div>
+
+    <div class="reel-card">
+      <video src="images/video/reel 3.mp4" muted loop></video>
+      <div class="reel-info">
+        <img src="images/New Jelwo 2.webp" alt="ring thumb">
+        <div>
+          <h4>Sherbi ring</h4>
+          <p>Rs. 26.00</p>
+        </div>
+      </div>
+      <button class="add-cart">ADD TO CART</button>
+    </div>
+
+    <div class="reel-card">
+      <video src="images/video/reel 4.mp4" muted loop></video>
+      <div class="reel-info">
+        <img src="images/Popular 3.webp" alt="earring thumb">
+        <div>
+          <h4>Drop gold earrings</h4>
+          <p>Rs. 14.00</p>
+        </div>
+      </div>
+      <button class="add-cart">ADD TO CART</button>
+    </div>
+
+    <div class="reel-card">
+      <video src="images/video/reel 5.mp4" muted loop></video>
+      <div class="reel-info">
+        <img src="images/News 2.webp" alt="pendant thumb">
+        <div>
+          <h4>Flower pendant</h4>
+          <p>Rs. 22.00</p>
+        </div>
+      </div>
+      <button class="add-cart">ADD TO CART</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- footer section  -->
+ <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2 class="logo"><span>J</span>ELWO</h2>
+      <p><i class="fa-solid fa-location-dot"></i> 55 East 10th street, New York, NY 10003</p>
+      <p><i class="fa-solid fa-phone"></i> + (220) 123 456 7890</p>
+      <p><i class="fa-solid fa-envelope"></i> demo123546@gmail.com</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Faq’s</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Privacy & terms</h3>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Refund policy</a></li>
+          <li><a href="#">Shipping & return</a></li>
+          <li><a href="#">Terms & condition</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Category</h3>
+        <ul>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Earrings</a></li>
+          <li><a href="#">Pendant</a></li>
+          <li><a href="#">Necklaces</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit store</h3>
+        <p>Mon - Sat : 10am - 11pm</p>
+        <p>Sun : 10am - 4pm</p>
+        <p>7 Days a week</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="subscribe-social">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="subscribe-text">
+        Subscribe and get 15% discount.
+      </div>
+
+      <div class="subscribe-box">
+        <input type="email" placeholder="Enter your email">
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+
+    <p class="copyright">Copyright © 2025 by spacingtech</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

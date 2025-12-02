@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ's - JELWO</title>
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #fdf9f6;
+      color: #2d2d2d;
+    }
+
+    header {
+      background: url('images/Faqs.webp') center/cover no-repeat;
+      text-align: center;
+      padding: 80px 0 60px;
+      color: #fff;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 42px;
+      margin: 10px 0 0;
+    }
+
+    header p {
+      position: relative;
+      z-index: 1;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .faq-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 40px;
+      gap: 60px;
+    }
+
+    .faq-sidebar {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .faq-sidebar h3 {
+      color: #b27856;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .faq-sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+
+    .faq-sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .faq-sidebar li {
+      padding: 12px 0;
+      border-bottom: 1px solid #e8e8e8;
+      cursor: pointer;
+      font-size: 15px;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .faq-sidebar li:hover {
+      color: #b27856;
+    }
+
+    .faq-content {
+      flex: 3;
+    }
+
+    .faq-section {
+      margin-bottom: 50px;
+    }
+
+    .faq-section h3 {
+      font-size: 20px;
+      color: #2d2d2d;
+      margin-bottom: 25px;
+    }
+
+    .faq-item {
+      border-top: 1px solid #e6e6e6;
+      padding: 18px 0;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .faq-item .question {
+      font-size: 16px;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+    }
+
+    .faq-item .question span {
+      font-size: 22px;
+      color: #b27856;
+      transition: 0.3s;
+    }
+
+    .faq-item.active .question span {
+      transform: rotate(45deg);
+    }
+
+    .faq-item .answer {
+      max-height: 0;
+      overflow: hidden;
+      color: #666;
+      font-size: 15px;
+      line-height: 1.7;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-item.active .answer {
+      max-height: 200px;
+      padding-top: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .faq-container {
+        flex-direction: column;
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p>HOME - FAQ'S</p>
+    <h1>Faq's</h1>
+  </header>
+
+  <div class="faq-container">
+    <div class="faq-sidebar">
+      <h3>Most Common</h3>
+      <h2>Questions</h2>
+      <ul>
+        <li>My Account</li>
+        <li>Company Policies</li>
+        <li>Payment Options</li>
+        <li>Terms and Conditions</li>
+      </ul>
+    </div>
+
+    <div class="faq-content">
+      <div class="faq-section">
+        <h3>Shopping Information</h3>
+
+        <div class="faq-item">
+          <div class="question">How can I contact you? <span>+</span></div>
+          <div class="answer">You can contact us anytime via our email demo123546@gmail.com or call +220 123 456 7890.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question">Do you have restock notifications? <span>+</span></div>
+          <div class="answer">Yes, you can subscribe to our newsletter to get updates when products are back in stock.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question">How do I care for my items? <span>+</span></div>
+          <div class="answer">Keep jewelry in a dry place, avoid contact with perfumes and water to retain shine and color.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question">How do I know what size I am? <span>+</span></div>
+          <div class="answer">Refer to our size guide page or contact support for personalized assistance.</div>
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <h3>Returns and Exchanges</h3>
+
+        <div class="faq-item">
+          <div class="question">Can I return or exchange something in store? <span>+</span></div>
+          <div class="answer">Yes, we accept returns or exchanges within 30 days of purchase with the original receipt.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question">How do I get a shipping label? <span>+</span></div>
+          <div class="answer">Once your return request is approved, a shipping label will be emailed to you automatically.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question">What do I do if I receive a defective item? <span>+</span></div>
+          <div class="answer">Please contact us immediately and provide a photo; we will assist you with a replacement.</div>
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <h3>Payment Information</h3>
+
+        <div class="faq-item">
+          <div class="question">How much is shipping and how long will it take? <span>+</span></div>
+          <div class="answer">Standard shipping takes 3-5 business days. Costs are calculated at checkout.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="question">What payment methods are accepted? <span>+</span></div>
+          <div class="answer">We accept all major credit cards, PayPal, and secure payment gateways.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- footer section  -->
+ <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2 class="logo"><span>J</span>ELWO</h2>
+      <p><i class="fa-solid fa-location-dot"></i> 55 East 10th street, New York, NY 10003</p>
+      <p><i class="fa-solid fa-phone"></i> + (220) 123 456 7890</p>
+      <p><i class="fa-solid fa-envelope"></i> demo123546@gmail.com</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Faq’s</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Privacy & terms</h3>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Refund policy</a></li>
+          <li><a href="#">Shipping & return</a></li>
+          <li><a href="#">Terms & condition</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Category</h3>
+        <ul>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Earrings</a></li>
+          <li><a href="#">Pendant</a></li>
+          <li><a href="#">Necklaces</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit store</h3>
+        <p>Mon - Sat : 10am - 11pm</p>
+        <p>Sun : 10am - 4pm</p>
+        <p>7 Days a week</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="subscribe-social">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="subscribe-text">
+        Subscribe and get 15% discount.
+      </div>
+
+      <div class="subscribe-box">
+        <input type="email" placeholder="Enter your email">
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+
+    <p class="copyright">Copyright © 2025 by spacingtech</p>
+  </div>
+</footer>
+
+  <script>
+    document.querySelectorAll('.faq-item .question').forEach(item => {
+      item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

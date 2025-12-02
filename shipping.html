@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping & Return</title>
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== SHIPPING PAGE EXCLUSIVE STYLES ===== */
+    body.shipping-page {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .shipping-wrapper {
+      width: 100%;
+      background-color: #fff;
+    }
+
+    /* HERO SECTION */
+    .shipping-header {
+      background: url('images/Faqs.webp') center/cover no-repeat;
+      padding: 100px 20px 60px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    .shipping-header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .shipping-header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .shipping-breadcrumb {
+      position: relative;
+      z-index: 1;
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-bottom: 10px;
+    }
+
+    /* MAIN CONTENT */
+    .shipping-content {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .shipping-left, .shipping-right {
+      font-size: 0.95rem;
+    }
+
+    .shipping-left p, .shipping-right p {
+      margin-bottom: 12px;
+      color: #555;
+    }
+
+    .shipping-left h3, .shipping-right h3 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+      color: #000;
+    }
+
+    .shipping-left ul, .shipping-right ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .shipping-left li, .shipping-right li {
+      margin-bottom: 6px;
+    }
+
+    /* CONTACT */
+    .shipping-contact {
+      text-align: center;
+      margin: 60px 20px;
+      font-size: 0.95rem;
+    }
+
+    .shipping-contact a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+      .shipping-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .shipping-header h1 {
+        font-size: 1.8rem;
+      }
+      .shipping-content {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body class="shipping-page">
+
+  <div class="shipping-wrapper">
+
+    <!-- HERO SECTION -->
+    <section class="shipping-header">
+      <div class="shipping-breadcrumb">HOME • SHIPPING & RETURN</div>
+      <h1>Shipping & return</h1>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="shipping-content">
+
+      <!-- LEFT COLUMN -->
+      <div class="shipping-left">
+        <h3>Returns</h3>
+        <p>The Green to Wear 2.0 standard aims to minimize the environmental impact of textile production. To this end, we have developed Inditex’s The List program.</p>
+        <ul>
+          <li>The Green to Wear 2.0 standard aims to minimize</li>
+          <li>The Green to Wear 2.0 standard aims to minimize</li>
+          <li>The Green to Wear 2.0 standard aims to minimize</li>
+          <li>To this end, we have developed Inditex’s The List program.</li>
+        </ul>
+
+        <h3>Exchanges</h3>
+        <p>The Green to Wear 2.0 standard aims to minimize the environmental impact of textile production.</p>
+        <p>The Green to Wear 2.0 standard aims to minimize the environmental impact of textile production. To this end, we have developed Inditex’s The List program.</p>
+
+        <ul>
+          <li><strong>We only replace items if they are defective or damaged:</strong> The Green to Wear 2.0 standard aims to minimize the environmental impact of textile production.</li>
+          <li><strong>If the item wasn’t marked as a gift when purchased:</strong> The Green to Wear 2.0 standard aims to minimize the environmental impact of textile production.</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="shipping-right">
+        <h3>Refunds</h3>
+        <p>The Green to Wear 2.0 standard aims to minimize the environmental impact of textile production. To this end, we have developed Inditex’s The List program.</p>
+        <ul>
+          <li>The Green to Wear 2.0 standard aims to minimize</li>
+          <li>To this end, we have developed Inditex’s The List program.</li>
+          <li>The Green to Wear 2.0 standard aims to minimize</li>
+          <li>To this end, we have developed Inditex’s The List program.</li>
+        </ul>
+
+        <h3>Shipping</h3>
+        <p>The Green to Wear 2.0 standard aims to minimize the environmental impact of textile production. To this end, we have developed Inditex’s The List program.</p>
+
+        <ul>
+          <li><strong>To return your product:</strong> The Green to Wear 2.0 standard aims to minimize the environmental impact of textile production.</li>
+          <li><strong>Depending on where you live:</strong> The Green to Wear 2.0 standard aims to minimize the environmental impact of textile production.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <!-- footer section  -->
+ <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2 class="logo"><span>J</span>ELWO</h2>
+      <p><i class="fa-solid fa-location-dot"></i> 55 East 10th street, New York, NY 10003</p>
+      <p><i class="fa-solid fa-phone"></i> + (220) 123 456 7890</p>
+      <p><i class="fa-solid fa-envelope"></i> demo123546@gmail.com</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Faq’s</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Privacy & terms</h3>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Refund policy</a></li>
+          <li><a href="#">Shipping & return</a></li>
+          <li><a href="#">Terms & condition</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Category</h3>
+        <ul>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Earrings</a></li>
+          <li><a href="#">Pendant</a></li>
+          <li><a href="#">Necklaces</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit store</h3>
+        <p>Mon - Sat : 10am - 11pm</p>
+        <p>Sun : 10am - 4pm</p>
+        <p>7 Days a week</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="subscribe-social">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="subscribe-text">
+        Subscribe and get 15% discount.
+      </div>
+
+      <div class="subscribe-box">
+        <input type="email" placeholder="Enter your email">
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+
+    <p class="copyright">Copyright © 2025 by spacingtech</p>
+  </div>
+</footer>
+</body>
+</html>
